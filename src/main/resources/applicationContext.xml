@@ -5,7 +5,5 @@
 
     <bean name="customerRepository" class="com.volnoboy.repository.HibernateCustomerRepositoryImpl"/>
 
-    <bean name="customerService" class="com.volnoboy.service.CustomerServiceImpl">
-        <constructor-arg index="0" ref="customerRepository"></constructor-arg>
-    </bean>
+    <bean name="customerService" class="com.volnoboy.service.CustomerServiceImpl" autowire="constructor"/>
 </beans>
