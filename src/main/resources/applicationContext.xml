@@ -5,5 +5,5 @@
 
     <bean name="customerRepository" class="com.volnoboy.repository.HibernateCustomerRepositoryImpl"/>
 
-    <bean name="customerService" class="com.volnoboy.service.CustomerServiceImpl" autowire="constructor"/>
+    <bean name="customerService" class="com.volnoboy.service.CustomerServiceImpl" autowire="byName"/>
 </beans>
