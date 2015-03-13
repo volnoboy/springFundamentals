@@ -4,11 +4,16 @@ import java.util.List;
 
 import com.volnoboy.model.Customer;
 import com.volnoboy.repository.CustomerRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 /**
  * Created by Reuven on 3/8/15.
  */
+@Service("customerService")
 public class CustomerServiceImpl implements CustomerService {
+
+	@Autowired
 	private CustomerRepository customerRepository;
 
 	public CustomerServiceImpl(CustomerRepository customerRepository) {
