@@ -4,10 +4,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.volnoboy.model.Customer;
+import org.springframework.stereotype.Repository;
 
 /**
  * Created by Reuven on 3/8/15.
  */
+@Repository
 public class HibernateCustomerRepositoryImpl implements CustomerRepository {
 
 	@Override
